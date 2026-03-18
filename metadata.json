@@ -1,0 +1,5 @@
+{
+  "name": "SmartPrice SA",
+  "description": "Chrome Extension that detects when a user is viewing a product page and instantly finds cheaper or similar products from South African retailers.",
+  "requestFramePermissions": []
+}

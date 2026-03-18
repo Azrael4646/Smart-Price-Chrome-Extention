@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "SmartPrice SA",
+  "version": "1.0.0",
+  "description": "Find cheaper products from South African retailers instantly.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open SmartPrice SA",
+    "default_popup": "index.html?popup=true"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
